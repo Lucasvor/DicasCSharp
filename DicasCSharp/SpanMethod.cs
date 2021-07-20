@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace DicasCSharp
 {
-    class Program
+    class SpanMethod
     {
         private static readonly string _dateAsText = "08 07 2021";
-        static void Main(string[] args)
-        {
-            Console.WriteLine(DateWithStringAndSubstring());
-            Console.WriteLine(DateWithStringAndSpan());
-        }
+        //private static void Main(string[] args)
+        //{
+        //    Console.WriteLine(DateWithStringAndSubstring());
+        //    Console.WriteLine(DateWithStringAndSpan());
+        //}
         public static (int day,int month, int year) DateWithStringAndSubstring()
         {
             var dayAsText = _dateAsText.Substring(0, 2);
